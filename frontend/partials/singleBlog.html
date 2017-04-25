@@ -1,0 +1,9 @@
+<div ng-controller="singleBlogController as vm">
+    <div class="col-md-10 col-md-offset-1 blog" ng-repeat="blog in vm.blog">
+        <h2>{{blog.title}} <span ng-click="vm.warn(blog._id)">Delete</span></h2>
+        <div class="blogImg">
+            <img src="{{blog.image}}">
+        </div>
+        <p class="blogContent">{{blog.content}}</p>
+    </div>
+</div>

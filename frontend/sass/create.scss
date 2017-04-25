@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    label {
+        color: whitesmoke;
+        display: block;
+    }
+    input {
+        width: 230px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+        background-color: grey;
+        border: none;
+    }
+    textarea {
+        margin-bottom: 25px;
+        background-color: grey;
+        border: none;
+    }
+    button {
+        color: whitesmoke;
+        background-color: grey;
+        border: none;
+    }
+    
+}

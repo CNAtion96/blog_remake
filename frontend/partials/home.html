@@ -1,0 +1,7 @@
+<div class="col-md-10 col-md-offset-1 blog" ng-repeat="blog in vm.blogs" ng-click="vm.setId(blog._id)" ui-sref="singleBlog">
+    <h2>{{blog.title}}</h2>
+    <div class="blogImg">
+        <img src="{{blog.image}}">
+    </div>
+    <p class="blogContent">{{blog.content}}</p>
+</div>

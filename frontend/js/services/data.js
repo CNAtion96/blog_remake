@@ -2,38 +2,39 @@
     'use strict';
 
     angular
-        .module('peopleList')
+        .module('scottBlog')
         .factory('data', function($http){
 
             return{
-                getUsers:() => {
+                getBlogs:() => {
                     return $http ({
                         method: "GET",
-                        url: `http://localhost:8080/people`,
+                        url: `http://localhost:8080/blog`,
                     })
                 },
 
-                getUser:(id) => {
+                getBlog:(id) => {
                     return $http ({
                         method:"GET",
-                        url:`http://localhost:8080/people/${id}`
+                        url:`http://localhost:8080/blog/${id}`
                     })
                 },
 
-                addUser:(data)=>{
+                addBlog:(data)=>{
                     return $http({
                         method:"POST",
                         data:data,
-                        url: `http://localhost:8080/people`
+                        url: `http://localhost:8080/blog`
                     })
                 },
 
-                deleteUser:(id)=>{
+                deleteBlog:(id)=>{
                     return $http({
                         method:"DELETE",
-                        url:`http://localhost:8080/people/${id}`
+                        url:`http://localhost:8080/blog/${id}`
                     })
                 }
+                
             }
 
          });

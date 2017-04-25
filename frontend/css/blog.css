@@ -1,0 +1,26 @@
+.blog {
+  padding: 15px 25px;
+  background-color: rgba(31, 31, 31, 0.2);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 25px; }
+  .blog h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center; }
+  .blog .blogContent {
+    align-self: flex-start; }
+  .blog span {
+    color: red;
+    cursor: pointer; }
+
+.blogImg {
+  padding: 0px;
+  width: 500px;
+  margin-bottom: 15px; }
+  .blogImg img {
+    max-width: 100%; }

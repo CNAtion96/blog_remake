@@ -1,0 +1,10 @@
+<!--Form to create a new blog post-->
+<form ng-controller="createBlogController as vm" novalidate name='blogDetails' ng-submit='vm.submitBlog(blogDetails.$valid)'>
+    <label for="title">Blog Title</label>
+    <input type="text" id="title" ng-model="vm.blog.title" required>
+    <label for="url">Image URL</label>
+    <input type="text" id="url" ng-model="vm.blog.image" required>
+    <label for="content">Blog Conent</label>
+    <textarea cols="30" rows="5" id="content" ng-model="vm.blog.content" required></textarea>
+    <button type="submit">Submit</button>
+</form>
